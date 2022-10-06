@@ -14,3 +14,11 @@ string thirdNumber = Console.ReadLine();
 int Num1=int.Parse(firstNumber);
 int Num2=int.Parse(secondNumber);
 int Num3=int.Parse(thirdNumber);
+
+
+int max = Num1;
+if (Num1 > max) max=Num1;
+if (Num2 > max) max=Num2;
+if (Num3 > max) max=Num3;
+
+Console.WriteLine($"{Num1} {Num2} {Num3} -> {max}");
